@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import './App.css';
+import ToDoList from './ToDoList';
+import ToDoListItem from './ToDoItem';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <h1>
-            A to do app
-        </h1>
+    <div className="App">
+        <h1>To Do List</h1>
+        <ToDoList/>
+        <ToDoListItem />
     </div>
     );
+    }
   }
-}
-
 export default App;
