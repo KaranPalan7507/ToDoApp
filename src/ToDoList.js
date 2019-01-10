@@ -1,10 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import './ToDoList.css';
+
+
 let index=0;
 class ToDoList extends Component {
 
   componentDidUpdate() {
-    this.props.inputElement.current.focus()
+    this.props.inputElement.current.focus();
   }
   render() {
     return (
@@ -34,6 +37,7 @@ class ToDoList extends Component {
       type: 'ADD_TASK',
       data
     });
+    
     this.getTask.value = '';
   }
 }
